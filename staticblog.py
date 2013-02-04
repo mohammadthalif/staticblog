@@ -18,6 +18,12 @@ def read_file(filename):
     return data
 
 def write_file(filename, data):
+    if os.path.exists(filename):
+        try:
+            os.remove(filename)
+        except:
+            print "Exception: ",str(sys.exc_info())
+    print "Creating file :", filename
     fp = open(filename, 'a')
     fp.write(data)
     fp.close()
@@ -30,9 +36,9 @@ def convert():
     html = markdown2.markdown_path(in_file)
     header = read_file(HEADER)
     footer = read_file(FOOTER)
-    write_file(out_file, header)
-    write_file(out_file, html)
-    write_file(out_file, footer)
+    write_file(out_file, header + html + footer)
+    #write_file(out_file, html)
+    #write_file(out_file, footer)
     
 
 def create_dir():
