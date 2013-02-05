@@ -1,0 +1,40 @@
+body {
+	margin: 0 auto;
+	width: 60%;
+	text-align:left;
+	font: 14px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(202, 202, 202);
+	padding: 30px;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0px 10px;
+    padding: 0px;
+    font-weight: bold;
+    cursor: text;
+    position: relative;
+	font-family: Helvetica,arial,freesans,clean,sans-serif;
+}
+p, blockquote, ul, ol, dl, table,pre {
+    margin: 15px 0px;
+}
+pre, code, tt {
+    font-size: 12px;
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+}
+pre {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+blockquote {
+    border-left: 4px solid rgb(221, 221, 221);
+    padding: 0px 15px;
+    color: rgb(119, 119, 119);
+}
