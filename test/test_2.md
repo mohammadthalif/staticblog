@@ -1,3 +1,5 @@
+# Readme file for markdown
+***
 Markdown is a light text markup format and a processor to convert that to HTML.
 The originator describes it as follows:
 
@@ -30,8 +32,7 @@ for updates to python-markdown2.
 
 Travis-ci.org test status: [![Build Status](https://secure.travis-ci.org/trentm/python-markdown2.png)](http://travis-ci.org/trentm/python-markdown2)
 
-
-# Install
+## Install
 
 To install it in your Python installation run *one* of the following:
 
@@ -124,3 +125,5 @@ set of matching .text (input) and .html (expected output) files. These are:
 See the [Testing Notes wiki
 page](https://github.com/trentm/python-markdown2/wiki/Testing-Notes) for full
 details.
+
+More on sytax can be found here <http://daringfireball.net/projects/markdown/syntax>

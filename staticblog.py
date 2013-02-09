@@ -10,6 +10,7 @@ import sys
 import os
 sys.path.append(".")
 import markdown2
+from bs4 import BeautifulSoup
 
 def read_file(filename):
     fp = open(filename, 'r')
@@ -36,7 +37,7 @@ def convert():
     html = markdown2.markdown_path(in_file)
     header = read_file(HEADER)
     footer = read_file(FOOTER)
-    write_file(out_file, header + html + footer)
+    write_file(out_file, header + html + footer )
     #write_file(out_file, html)
     #write_file(out_file, footer)
     
